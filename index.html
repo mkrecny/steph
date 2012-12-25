@@ -1,0 +1,129 @@
+<html>
+  <head>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>-->
+    <script src="/jquery-1.6.min.js"></script>
+    <title>Stephanie Nieman</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="menu">
+        <div style="height:52px"></div>
+        <span data-action="code" class="menu-item">INFO</span>
+        <span data-action="blog" class="menu-item">HIRE</span>
+        <span data-action="cntct" class="menu-item">TALK</span>
+      </div>
+      <div class="explain">
+        <div class="explain-content">
+          <div style="margin-top:60px">Hi, I'm Steph.</div>
+          <p><img class="photo" src="https://twimg0-a.akamaihd.net/profile_images/2841812365/3b1d4427b46a5f6f6e665cf6dec585d3.png" /></p>
+          <p>
+            Co-Creator at <a href="http://http://upliftstudios.com">Uplift Studios</a> & NYC Fitness Guru offering high energy cardio classes and interactive workshops.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="twitter-follow-link-container">
+      <a href="https://twitter.com/stephnieman" id="tw-fl-btn" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @StephNieman</a>
+    </div>
+  </div>
+  </body>
+</html>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<script type="text/javascript">
+  var clickCallbacks = {
+    code : function(){
+      $('.explain-content').html($('#code-template').html());
+    },
+    cntct : function(){
+      $('.explain-content').html($('#email-template').html());
+    },
+    blog : function(){
+      $('.explain-content').html($('#blog-template').html());
+    },
+    study : function(){
+      $('.explain-content').html($('#study-template').html());
+    }
+  };
+  $(document).ready(function(){
+    $('.menu-item').each(function(i, el){
+      $(el).click(function(){
+        clickCallbacks[$(el).data('action')]();
+      });
+    });
+  });
+</script>
+<script type="text/template" id="code-template">
+  <p style="margin-top:120px">
+    I've worked as a fitness instructor at <a href="http://soul-cycle.com">Soul Cycle</a>,
+    <a href="http://barrysbootcamp.com">Barry's Bootcamp</a> and 
+    <a href="http://flywheelsports.com">Flywheel Sports</a>.
+    I'm currently creating a new fitness movement for women at <a href="http://upliftstudios">Uplift Studios</a>.
+  </p>
+</script>
+<script type="text/template" id="blog-template">
+  <p style="margin-top:100px">
+    Currently I offer personal training (physical) for individuals,
+    and drama-based workshops for coroporate groups.
+  </p>
+  <p>
+    stephanieknieman@gmail for rates & availability
+  </p>
+</script>
+<script type="text/template" id="email-template">
+  <p style="margin-top:160px">stephanieknieman@gmail</p>
+  <p><a target=blank href="http://twitter.com/stephnieman">@StephNieman</a></p>
+</script>
+<script type="text/template" id="study-template">
+  <p style="margin-top:70px">I've worked as a Software Engineer at <a href="http://techstars.org">TechStarsNYC</a>, <a href="http://klicknation.com">Klicknation</a>, 
+    <a href="http://shelby.tv">Shelby</a> and I founded <a href="http://followgen.com">Followgen</a></p>
+  <p>I've also been a management consultant at <a href="http://lek.com">LEK Consulting</a>
+  <p>I'm a part time grad student at NYU,
+    <a href="http://edu.mkrecny.com">studying Complex Systems</a></p>
+</script>
+
+
+<style>
+  .content{
+    margin:0px auto;
+    margin-top:100px;
+    width:800px;
+    height:500px;
+    text-align:center;
+    font-family:helvetica, arial, sans-serif;
+  }
+  .menu{
+    font-weight:200;
+    float:left;
+    height:100%;
+    width:49%;
+  }
+  .explain{
+    font-weight:200;
+    float:right;
+    height:100%;
+    width:49%;
+  }
+  .explain-content{
+    font-size:27px;
+  }
+  .menu-item{
+    cursor:pointer;
+    font-size:100px;
+    width:100%;
+  }
+  #twitter-follow-link-container{
+    position:absolute;
+    bottom:10px;
+    right:20px;
+  }
+  .menu-item:hover{
+    /*color:#F6F792;*/
+    color:pink;
+  }
+  .photo{
+    border:1px solid pink;
+    height:120px;
+  }
+</style>
