@@ -5,19 +5,21 @@
     <title>Stephanie Nieman</title>
   </head>
   <body>
+    <img id="back-img" src="/uplift.jpg" />
     <div class="content">
       <div class="menu">
         <div style="height:52px"></div>
         <span data-action="code" class="menu-item">INFO</span>
-        <span data-action="blog" class="menu-item">HIRE</span>
         <span data-action="cntct" class="menu-item">TALK</span>
+        <span data-action="blog" class="menu-item">TRAIN</span>
       </div>
       <div class="explain">
         <div class="explain-content">
           <div style="margin-top:60px">Hi, I'm Steph.</div>
-          <p><img class="photo" src="https://twimg0-a.akamaihd.net/profile_images/2841812365/3b1d4427b46a5f6f6e665cf6dec585d3.png" /></p>
+          <!--<p><img class="photo" src="https://twimg0-a.akamaihd.net/profile_images/2841812365/3b1d4427b46a5f6f6e665cf6dec585d3.png" /></p>-->
+          <p><img class="photo" src="/stephshot.png" /></p>
           <p>
-            Co-Creator at <a href="http://upliftstudios.com">Uplift Studios</a> & NYC Fitness Guru offering high energy cardio classes and interactive workshops.
+            Co-Creator at <a href="http://upliftstudios.com">Uplift Studios</a> & NYC Fitness Guru offering high energy cardio classes.
           </p>
         </div>
       </div>
@@ -54,27 +56,62 @@
     });
   });
 </script>
+
 <script type="text/template" id="code-template">
-  <p style="margin-top:120px">
-    I've worked as a fitness instructor at <a href="http://soul-cycle.com">Soul Cycle</a>,
+  <p style="font-size:90%;margin-top:50px">
+    I've led classes at <a href="http://soul-cycle.com">Soul Cycle</a>,
     <a href="http://barrysbootcamp.com">Barry's Bootcamp</a> and 
     <a href="http://flywheelsports.com">Flywheel Sports</a>.
-    I'm currently creating a new fitness movement for women at <a href="http://upliftstudios.com">Uplift Studios</a>.
+  </p>
+  <p style="font-size:90%">
+    I'm currently creating a new fitness movement for women at
+    <a href="http://upliftstudios.com">Uplift Studios</a>.
+  </p>
+  <p style="font-size:90%">
+    I'm changing the way consumers discover fitness classes at <a href="http://classtivity.com">Classtivity</a>.
+  </p>
+  <p style="font-size:90%">
+    Email: stephanieknieman@gmail<br>Twitter: <a href="http://twitter.com/stephnieman">@StephNieman</a>
   </p>
 </script>
+
 <script type="text/template" id="blog-template">
-  <p style="margin-top:100px">
-    Currently I offer personal training (physical) for individuals,
-    and drama-based workshops for corporate groups.
+  
+  <p style="margin-bottom:-10px;margin-top:60px">
+    Schedule at <a href="https://clients.mindbodyonline.com/ASP/adm/home.asp?studioid=23340">Uplift</a>
   </p>
+  <hr style="opacity:0.4">
   <p>
-    stephanieknieman@gmail for rates & availability
+    <table style="margin-top:-20px;margin-left:105px;font-weight:100;font-size:90%">
+      <tr><td style="opacity:0.5">Mon:</td><td>&nbsp;5:30pm</td></tr>
+      <tr><td style="opacity:0.5">Tue:</td><td>12:30pm</td></tr>
+      <tr><td style="opacity:0.5">Wed:</td><td>8:30am</td></tr>
+      <tr><td style="opacity:0.5"></td><td>10:30am</td></tr>
+      <tr><td style="opacity:0.5">Thu:</td><td>7:30am</td></tr>
+      <tr><td style="opacity:0.5"></td><td>8:30am</td></tr>
+      <tr><td style="opacity:0.5"></td><td>10:30am</td></tr>
+      <tr><td style="opacity:0.5">Sat:</td><td>10:30am</td></tr>
+      <tr><td style="opacity:0.5"></td><td>12:30pm</td></tr>
+  </table>
+  </p>
+  
+</script>
+
+<script type="text/template" id="email-template">
+  <p style="margin-top:45px;font-size:90%">
+    "She was on the verge of doing a high kick." - <a href="http://rateyourburn.com/review/79">Rate Your Burn</a>
+  </p>
+  <p style="font-size:90%">
+    "It's like Flybarre meets People's Bootcamp meets SoulCycle." - <a href=" http://www.wellandgoodnyc.com/2013/02/20/uplift-studios-gives-its-class-offerings-a-makeover">Well+Good NYC</a>
+  </p>
+  <p style="font-size:90%">
+    "It was inspiring to see her just totally own the room" - <a href="http://fatbottomslim.com/2012/10/10/stephanie-nieman/">FatBottomSlim</a>
+  </p>
+  <p style="font-size:90%">
+    "This is Stephanie's element. Her energy was incredible" - <a href="http://fitjourney.com/blog/2013/2/13/fyth6bk6hmeh2b8auj0625jevu63ve">FitJourney</a>
   </p>
 </script>
-<script type="text/template" id="email-template">
-  <p style="margin-top:160px">stephanieknieman@gmail</p>
-  <p><a target=blank href="http://twitter.com/stephnieman">@StephNieman</a></p>
-</script>
+
 <script type="text/template" id="study-template">
   <p style="margin-top:70px">I've worked as a Software Engineer at <a href="http://techstars.org">TechStarsNYC</a>, <a href="http://klicknation.com">Klicknation</a>, 
     <a href="http://shelby.tv">Shelby</a> and I founded <a href="http://followgen.com">Followgen</a></p>
@@ -85,6 +122,21 @@
 
 
 <style>
+  body{
+    overflow:hidden;
+  }
+  table, th, td{
+    table-collapse:collapse;
+    text-align:right;
+  }
+  #back-img{
+    /*-webkit-filter: grayscale(100%) blur(3px);*/
+    /*-webkit-filter:brightness(0%) blur(8px);*/
+    position:absolute;
+    top:0%;
+    width:100%;
+    z-index:-10000;
+  }
   .content{
     margin:0px auto;
     margin-top:100px;
@@ -92,6 +144,9 @@
     height:500px;
     text-align:center;
     font-family:helvetica, arial, sans-serif;
+    opacity:0.83;
+    background-color:white;
+    border-radius:20px;
   }
   .menu{
     font-weight:200;
@@ -107,11 +162,16 @@
   }
   .explain-content{
     font-size:27px;
+    margin-right:50px;
   }
   .menu-item{
     cursor:pointer;
     font-size:100px;
     width:100%;
+  }
+  col {
+   border-left: solid;
+   border-right: solid
   }
   #twitter-follow-link-container{
     position:absolute;
@@ -120,10 +180,12 @@
   }
   .menu-item:hover{
     /*color:#F6F792;*/
-    color:pink;
+    color:#1AB58A;
   }
   .photo{
+    -webkit-filter: contrast(120%); 
     border:1px solid pink;
+    border-radius:10px;
     height:120px;
   }
 </style>
